@@ -15,7 +15,7 @@ public class BioTrivia extends Activity{
 	if (FirstChoice == 1) {
 	    //Introduces Bio Quiz//System.out.println("");
 	    //First Question// System.out.println("");
-	    int FirstAnswer = Keyboard.readString();
+	    int FirstAnswer = Keyboard.readInt();
 	      if(FirstAnswer== 1) {
 		    System.out.println("MESSAGE THEY GET.");
         Score+=1;
