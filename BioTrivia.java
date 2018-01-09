@@ -11,11 +11,11 @@ public class BioTrivia extends Activity{
       System.out.println("Welcome to the Biology Labratory! Since you seem so eager to be here, let's start with a little quiz!");
 	System.out.println("1. Let's do it!");
 	System.out.println("2. Well, *INSERT LONG EXCUSE*");
-	String FirstChoice = Keyboard.readInt();
+	int FirstChoice = Keyboard.readInt();
 	if (FirstChoice == 1) {
 	    //Introduces Bio Quiz//System.out.println("");
 	    //First Question// System.out.println("");
-	    String FirstAnswer = Keyboard.readString();
+	    int FirstAnswer = Keyboard.readString();
 	      if(FirstAnswer== 1) {
 		    System.out.println("MESSAGE THEY GET.");
         Score+=1;
