@@ -48,7 +48,7 @@ public class BioTrivia extends Activity{
       
       
     }
-    public void Play(Player x) {
+    public void PlayActivity(Player x) {
 	
     }
 
