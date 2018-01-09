@@ -18,7 +18,7 @@ public class BioTrivia extends Activity{
 	    String FirstAnswer = Keyboard.readString();
 	      if(FirstAnswer== 1) {
 		    System.out.println("MESSAGE THEY GET.");
-        Score+=1
+        Score+=1;
 		/*
 		  //Second Question//  System.out.println("");
 		    
@@ -31,6 +31,7 @@ public class BioTrivia extends Activity{
       }
 	}
 	*/
+	      }
 	else {
 	    System.out.println("BLalbalbal I've hearfd this one already (In response to long excuse)!");
 	    return 1;
