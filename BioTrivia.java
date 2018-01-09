@@ -16,7 +16,7 @@ public class BioTrivia extends Activity{
 	    //Introduces Bio Quiz//System.out.println("");
 	    //First Question// System.out.println("");
 	    String FirstAnswer = Keyboard.readString();
-	     Insert Filler if(FirstAnswer== 1) {
+	      if(FirstAnswer== 1) {
 		    System.out.println("MESSAGE THEY GET.");
         Score+=1
 		/*
