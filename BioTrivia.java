@@ -37,6 +37,7 @@ public class BioTrivia extends Activity{
 	    return 1;
 	    //add 5 energy used to the player
 	}
+	}
       
       
       
