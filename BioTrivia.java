@@ -16,9 +16,10 @@ public class BioTrivia extends Activity{
 	    //Introduces Bio Quiz//System.out.println("");
 	    //First Question// System.out.println("");
 	    String FirstAnswer = Keyboard.readString();
-	    /* Insert Filler if(FirstAnswer== Correct ANSWER CHOCIE) {
+	     Insert Filler if(FirstAnswer== 1) {
 		    System.out.println("MESSAGE THEY GET.");
         Score+=1
+		/*
 		  //Second Question//  System.out.println("");
 		    
 		}
@@ -29,6 +30,7 @@ public class BioTrivia extends Activity{
 	    return 2;
       }
 	}
+	*/
 	else {
 	    System.out.println("BLalbalbal I've hearfd this one already (In response to long excuse)!");
 	    return 1;
