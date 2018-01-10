@@ -19,7 +19,7 @@ public class BioTrivia extends Activity{
 	    //First Question//
 	    System.out.println("What is the “powerhouse” of the cell? Is it:");
 	    //Choices//
-	    System.out.println("(1)Deoxyribonucleic Acid n\ (2)Mitochondria n\ (3)Cristae n\ (4)Ribosome");
+	    System.out.println("(1)Deoxyribonucleic Acid \n (2)Mitochondria n\ (3)Cristae \n (4)Ribosome");
 	    int FirstAnswer = Keyboard.readInt();
 	    if(FirstAnswer== 2) {
 		Score+=1;
@@ -33,11 +33,11 @@ public class BioTrivia extends Activity{
 		Score+=1;
 	    }
 	    //Third Question//
-	    System.out.println("What is the “powerhouse” of the cell? Is it:");
+	    System.out.println("Which hormone causes the feeling of “hunger”?");
 	    //Choices//
-	    System.out.println("(1)Deoxyribonucleic Acid n\ (2)Mitochondria n\ (3)Cristae n\ (4)Ribosome");
-	    int SecondAnswer = Keyboard.readInt();
-	    if(SecondAnswer == 2) {
+	    System.out.println("(1)Leptin \n (2)Septin \n (3)Hangry \n (4)Dopamine");
+	    int ThirdAnswer = Keyboard.readInt();
+	    if(ThirdAnswer == 1) {
 		Score+=1;
 	    }
 	    //Fourth Question//
