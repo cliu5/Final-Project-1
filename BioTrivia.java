@@ -41,19 +41,19 @@ public class BioTrivia extends Activity{
 		Score+=1;
 	    }
 	    //Fourth Question//
-	    System.out.println("What is the “powerhouse” of the cell? Is it:");
+	    System.out.println("Here’s a question about happiness. What requires the most energy: smiling or frowning?");
 	    //Choices//
-	    System.out.println("(1)Deoxyribonucleic Acid n\ (2)Mitochondria n\ (3)Cristae n\ (4)Ribosome");
-	    int SecondAnswer = Keyboard.readInt();
-	    if(SecondAnswer == 2) {
+	    System.out.println("(1)Smiling \n (2)Frowning \n (3)Half-Smiling,Half-Frowning, or just Smowning \n (4)Both require the same amount of energy.");
+	    int FourthAnswer = Keyboard.readInt();
+	    if(FourthAnswer == 2) {
 		Score+=1;
 	    }
 	    //Fifth Question//
-	    System.out.println("What is the “powerhouse” of the cell? Is it:");
+	    System.out.println("In which of the following species does the male, NOT the female, carry the unborn offspring?");
 	    //Choices//
-	    System.out.println("(1)Deoxyribonucleic Acid n\ (2)Mitochondria n\ (3)Cristae n\ (4)Ribosome");
-	    int SecondAnswer = Keyboard.readInt();
-	    if(SecondAnswer == 2) {
+	    System.out.println("(1)Serpentes \n (2)Hippocampus \n (3)Sirenia \n (4)HA, this is a trick question. The male member of ANY species never carries the unborn offspring.");
+	    int FifthAnswer = Keyboard.readInt();
+	    if(FifthAnswer == 2) {
 		Score+=1;
 	    }
 
