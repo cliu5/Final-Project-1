@@ -9,6 +9,8 @@ public class Player{
 	    playLevel();
 	}
 	System.out.println("You're done blablabla add stuff later");
+	
+	    //this is just a temp test to make sure trivias are working//
     }
 
     public void playLeve(){
