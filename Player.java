@@ -76,7 +76,15 @@ public Player(){
 	Activity twenty48 = new Game2048(); //The latter is the classname//
   _Floor9.add(twenty48);
   MasterActivity.add(_Floor9);
-	
+	MasterFloor.add(Floor1);
+	MasterFloor.add(Floor2);
+	MasterFloor.add(Floor3);
+	MasterFloor.add(Floor4);
+	MasterFloor.add(Floor5);
+	MasterFloor.add(Floor6);
+	MasterFloor.add(Floor7);
+	MasterFloor.add(Floor8);
+	MasterFloor.add(Floor9);
   Floor1.add("You burst through the entrance and find yourself on the 1st Floor of Stuyvesant High \n School. Before you, you see fallen students with papers on the floor. They all seem to be pointing \n in the general direction of the Band Room and Theater.");
   Floor1.add("Do you proceed to (1) the Band Room OR (2) the Theater?");
   Floor2.add("You have now arrived on the second floor. Once again, there is chaos everywhere. The chaos seems \n to pointing towards the Guidance Room and Museum Room.");
