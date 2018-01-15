@@ -149,7 +149,7 @@ public void playLevel() {
 	    
     int USEROPTION = Keyboard.readInt();
     if (USEROPTION < TOTALonFLOOR) {
-      MasterActivity.get(floor).get(USEROPTION+1).PlayActivity(this);
+      MasterActivity.get(floor).get(USEROPTION).PlayActivity(this);
       optionStatus[floor][USEROPTION] = true;
       if (floor == 9) {
 		    floor ++;
