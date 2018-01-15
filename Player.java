@@ -85,8 +85,8 @@ public Player(){
 	MasterFloor.add(Floor7);
 	MasterFloor.add(Floor8);
 	MasterFloor.add(Floor9);
+  Floor1.add("Theatre");
   Floor1.add("Band Room");
-  Floor1.add("Theater");
   Floor1.add("You burst through the entrance and find yourself on the 1st Floor of Stuyvesant High School. Before you, you see fallen students with papers on the floor. They all seem to be pointing in the general direction of the Band Room and Theater. Where do you proceed?");
   Floor2.add("Guidance Office");
   Floor2.add("Museum Room");
