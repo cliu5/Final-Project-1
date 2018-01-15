@@ -1,3 +1,4 @@
+import cs1.Keyboard
 public class CSRoom extends Activity{
   public void PlayActivity(Player x) {
     boolean result = CSRoom();
@@ -5,7 +6,7 @@ public class CSRoom extends Activity{
       System.out.println("You decide to proceed to the next floor. As you walk up the stairs, the warning bell rings.");
     }else{
       System.out.println("You are about to knock on the door when the warning bell rings. You realize that you don't \n have much time left to catch the perpatrator so you rush up to the next floor.");
-      energy+=1;
+      x.energy+=1;
     }
   }
 
