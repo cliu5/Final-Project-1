@@ -19,53 +19,21 @@ public class Player{
   ArrayList<String> Floor7 = new ArrayList<String>();
   ArrayList<String> Floor8 = new ArrayList<String>();
   ArrayList<String> Floor9 = new ArrayList<String>();
+	
+	//activiyt arraylist//
+	
+
   ArrayList<ArrayList<Activity>> MasterActivity = new	ArrayList<ArrayList<Activity>>();
   ArrayList<Activity>_Floor1=new ArrayList<Activity>();
-  Activity STCTrivia = new STCTrivia();
-  _Floor1.add(STCTrivia);
-  Activity BandRoom = new Band();
-  _Floor1.add(BandRoom);
-  MasterActivity.add(_Floor1);
   ArrayList<Activity>_Floor2=new ArrayList<Activity>();
-  Activity Guidance = new Guidance();
-  _Floor2.add(Guidance);
-  Activity Museum = new HisTrivia();
-  _Floor2.add(Museum);
-  MasterActivity.add(_Floor2);
   ArrayList<Activity>_Floor3=new ArrayList<Activity>();
-  Activity Bathroom = new Bathroom();
-  _Floor3.add(Bathroom);
-  Activity CSRoom = new CSRoom();
-  _Floor3.add(CSRoom);
-  MasterActivity.add(_Floor3);
   ArrayList<Activity>_Floor4=new ArrayList<Activity>();
-  Activity MathExhibit = new MathExhibit();
-  _Floor4.add(MathExhibit);
-  MasterActivity.add(_Floor4);
   ArrayList<Activity>_Floor5=new ArrayList<Activity>();
-  Activity Cafeteria = new Cafe();
-  _Floor5.add(Cafeteria);
-  MasterActivity.add(_Floor5);
   ArrayList<Activity>_Floor6=new ArrayList<Activity>();
-  Activity Gym = new Gym();
-  _Floor6.add(Gym);
-  Activity SaD = new SaD();
-  _Floor6.add(SaD);
-  MasterActivity.add(_Floor6);
   ArrayList<Activity>_Floor7=new ArrayList<Activity>();
-  Activity BioLab = new BioTrivia();
-  _Floor7.add(BioLab);
-  MasterActivity.add(_Floor7);
   ArrayList<Activity>_Floor8=new ArrayList<Activity>();
-  Activity PhyLab = new PhyLab();
-  _Floor8.add(PhyLab);
-  Activity Bench = new Bench();
-  _Floor8.add(Bench);
-  MasterActivity.add(_Floor8);
   ArrayList<Activity>_Floor9=new ArrayList<Activity>();	    
-  Activity twenty48 = new Game2048(); //The latter is the classname//
-  _Floor9.add(twenty48);
-  MasterActivity.add(_Floor9);
+  
 }
 	
 public Player(String _name){
@@ -75,6 +43,45 @@ public Player(String _name){
 	
 	
 public Player(){
+		Activity STCTrivia = new STCTrivia();
+  _Floor1.add(STCTrivia);
+  Activity BandRoom = new Band();
+  _Floor1.add(BandRoom);
+  MasterActivity.add(_Floor1);
+	Activity Guidance = new Guidance();
+  _Floor2.add(Guidance);
+  Activity Museum = new HisTrivia();
+  _Floor2.add(Museum);
+  MasterActivity.add(_Floor2);
+	Activity Bathroom = new Bathroom();
+  _Floor3.add(Bathroom);
+  Activity CSRoom = new CSRoom();
+  _Floor3.add(CSRoom);
+  MasterActivity.add(_Floor3);
+	Activity MathExhibit = new MathExhibit();
+  _Floor4.add(MathExhibit);
+  MasterActivity.add(_Floor4);
+	Activity Cafeteria = new Cafe();
+  _Floor5.add(Cafeteria);
+  MasterActivity.add(_Floor5);
+	Activity Gym = new Gym();
+  _Floor6.add(Gym);
+  Activity SaD = new SaD();
+  _Floor6.add(SaD);
+  MasterActivity.add(_Floor6);
+	Activity BioLab = new BioTrivia();
+  _Floor7.add(BioLab);
+  MasterActivity.add(_Floor7);
+	
+	Activity PhyLab = new PhyLab();
+  _Floor8.add(PhyLab);
+  Activity Bench = new Bench();
+  _Floor8.add(Bench);
+  MasterActivity.add(_Floor8);
+	Activity twenty48 = new Game2048(); //The latter is the classname//
+  _Floor9.add(twenty48);
+  MasterActivity.add(_Floor9);
+	
   Floor1.add("You burst through the entrance and find yourself on the 1st Floor of Stuyvesant High \n School. Before you, you see fallen students with papers on the floor. They all seem to be pointing \n in the general direction of the Band Room and Theater.");
   Floor1.add("Do you proceed to (1) the Band Room OR (2) the Theater?");
   Floor2.add("You have now arrived on the second floor. Once again, there is chaos everywhere. The chaos seems \n to pointing towards the Guidance Room and Museum Room.");
