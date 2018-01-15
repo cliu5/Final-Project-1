@@ -6,11 +6,7 @@ public class Player{
   public String name;
   public int floor = 9;
   public int energy = 10;
-  public Player(String _name){
-    name=_name;
-	  this();
-  
-
+	
 	boolean[][] optionStatus = {{false,false},{false,false},{false,false},{false},{false},{false,false},{false},{false,false},{false}};
     
 	ArrayList<ArrayList<String>> MasterFloor = new ArrayList<ArrayList<String>>();
@@ -93,7 +89,10 @@ public class Player{
     MasterActivity.add(_Floor9);
   }
 	
-	
+	public Player(String _name){
+	  this();
+    name=_name;
+  }
 	
 	
   public Player(){
