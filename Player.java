@@ -1,7 +1,9 @@
 import java.util.ArrayList;
+import cs1.Keyboard;
 
 public class Player{
   public String name;
+public int floor=9;
   public Player(String _name){
     name=_name;
   }
@@ -98,7 +100,7 @@ public class Player{
     //this is just a temp test to make sure trivias are working//
   }
 
-  public void playLeve(){
+  public void playLevel(){
     System.out.println("THIS WILL BE A FUNCTION THAT DISPALYS ALL THE GAMES ON THE FLOOR");
     while(false){
       int option=0;
