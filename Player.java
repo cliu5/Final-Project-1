@@ -103,7 +103,7 @@ public Player(String givenname){
   name=givenname;
 }
 public void Play(){
-  System.out.println("WELCOME TO OUR GAME!!! YOU ARE IN STUY");
+  System.out.println("WELCOME TO OUR GAME!!!" + name+". YOU ARE IN STUY");
   while(floor<10){
     playLevel();
   }
