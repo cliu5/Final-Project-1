@@ -151,8 +151,16 @@ public void playLevel() {
     if (USEROPTION < TOTALonFLOOR) {
       MasterActivity.get(floor).get(USEROPTION+1).PlayActivity(this);
       optionStatus[floor][USEROPTION] = true;
-      floor+=1;
-    }
+      if (floor == 9) {
+		    floor ++;
+		}
+	    }
+	    else if (USEROPTION == stairs) {
+		floor++;
+		return;
+	    }
+	    
+   
 	}
 }
 }
