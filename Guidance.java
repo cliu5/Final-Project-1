@@ -5,7 +5,7 @@ public class Guidance extends Activity{
       System.out.println("You leave and move onto the next floor.");
     }else{
       System.out.println("You wait for another minute and then the secretary takes pity on you and tells you that \n your guidance couselor isn't present today. She gives you a piece of candy.");
-      energy+=1;
+      x.energy+=1;
     }
   }
 
