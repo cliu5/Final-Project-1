@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class HisTrivia extends Activity{
    
-  public static int HistoryStarter() {
+  public static boolean HistoryStarter() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Mueseum Room! Since you seem so eager to be here, let's start with a little quiz!"
@@ -64,23 +64,28 @@ public class HisTrivia extends Activity{
     //Score report
     if(Score >= 3){
       System.out.println("Noice, you passed! Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Pope Gregory IX. By condemning cats as servants of Satan, \n  his actions would lead to a wide extermination of cats. This reduction of cats allowed for the \n increased numbers of rats, vectors of the Black Death. \n 2. (2) Most kamikaze died in vain. Only 1 in 9 kamikaze pilots hit their targets during WW2. \n 3. (1) Leptin. \n 4. (2)  Richard Nixon, who declared drug abuse “public enemy number one”. \n 5. (4) The Nazi party referred to themselves as the Third Reich because they wanted the public \n to believe that they were another unifying force. First Reich was the medieval Holy Roman Empire,\n  which lasted until 1806. The Second Reich included the German Empire from 1871-1918.");
+      return true;
         }
 
     if(Score<3){
       System.out.println("So close, yet so far. Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Pope Gregory IX. By condemning cats as servants of Satan, \n  his actions would lead to a wide extermination of cats. This reduction of cats allowed for the \n increased numbers of rats, vectors of the Black Death. \n 2. (2) Most kamikaze died in vain. Only 1 in 9 kamikaze pilots hit their targets during WW2. \n 3. (1) Leptin. \n 4. (2)  Richard Nixon, who declared drug abuse “public enemy number one”. \n 5. (4) The Nazi party referred to themselves as the Third Reich because they wanted the public \n to believe that they were another unifying force. First Reich was the medieval Holy Roman Empire,\n  which lasted until 1806. The Second Reich included the German Empire from 1871-1918.");
-        return 2;
+        return false;
     }
     else {
       System.out.println("Very well, but remember the words of William Faulkner, “The past is never dead. It's not even past.”" );
-      return 1;
-      //add 5 energy used to the player
+      return false;
     }
-
-      
-    //return 0;
   }
+  
   public void PlayActivity(Player x) {
-	
+    boolean result = HistoryStarter();
+    if (result){
+      System.out.println(“Yay u won…”);
+      enery+=2;
+    }else{
+      System.print”Awww man  u lost”;
+      energy-=1;
+    }
   }
 
 

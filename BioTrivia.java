@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class BioTrivia extends Activity{
    
-  public static int BiologyStarter() {
+  public static boolean BioTriviaStarter() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Biology Labratory! Since you seem so eager to be here, let's start with a little quiz!"
@@ -63,16 +63,17 @@ public class BioTrivia extends Activity{
     }
     //Score report
     if(Score >= 3){
-      System.out.println("Noice, you passed! Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Mitochondria, or as I like to say, “Mighty Mitochondria”! \n 3. (2) Cortisol, the stress induced hormone. \n \t Fun Fact: Stress is slowly killing you, but what doesn’t \n  kill you immediately, only makes you stronger! (I think) \n 3. (1) Leptin. \n 4. (2) Frowning. Frowning requires more energy as it requires 43 muscles, \n much more compared to the 17 muscles needed to smile. \n 5. (2)  Hippocampus, also known as the seahorse.");
+      System.out.println("Noice, you passed! Out of 5 questions, you got " + Score + " correct! \n Your answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Mitochondria, or as I like to say, “Mighty Mitochondria”! \n 3. (2) Cortisol, the stress induced hormone. \n \t Fun Fact: Stress is slowly killing you, but what doesn’t \n  kill you immediately, only makes you stronger! (I think) \n 3. (1) Leptin. \n 4. (2) Frowning. Frowning requires more energy as it requires 43 muscles, \n much more compared to the 17 muscles needed to smile. \n 5. (2)  Hippocampus, also known as the seahorse.");
+      return true;
         }
 
     if(Score<3){
-      System.out.println("So close, yet so far. Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Mitochondria, or as I like to say, “Mighty Mitochondria”! \n 3. (2) Cortisol, the stress induced hormone. \n \t Fun Fact: Stress is slowly killing you, but what doesn’t \n  kill you immediately, only makes you stronger! (I think) \n 3. (1) Leptin. \n 4. (2) Frowning. Frowning requires more energy as it requires 43 muscles, \n much more compared to the 17 muscles needed to smile. \n 5. (2)  Hippocampus, also known as the seahorse.");
-	    return 2;
+      System.out.println("So close, yet so far. Out of 5 questions, you got " + Score + " correct! \n Your answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (2) Mitochondria, or as I like to say, “Mighty Mitochondria”! \n 3. (2) Cortisol, the stress induced hormone. \n \t Fun Fact: Stress is slowly killing you, but what doesn’t \n  kill you immediately, only makes you stronger! (I think) \n 3. (1) Leptin. \n 4. (2) Frowning. Frowning requires more energy as it requires 43 muscles, \n much more compared to the 17 muscles needed to smile. \n 5. (2)  Hippocampus, also known as the seahorse.");
+	    return false;
     }
     else {
       System.out.println("Fine.");
-      return 1;
+      return false;
       //add 5 energy used to the player
     }
 
@@ -80,8 +81,13 @@ public class BioTrivia extends Activity{
     //return 0;
   }
   public void PlayActivity(Player x) {
-	
+    boolean result = BiologyStarter();
+    if (result){
+      System.out.println(“Yay u won…”);
+      enery+=2;
+    }else{
+      System.print”u lost”;
+      energy-=1;
+    }
   }
-
-
 }

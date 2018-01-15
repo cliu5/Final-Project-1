@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class STCTrivia extends Activity{
    
-  public static int TheaterStarter() {
+  public static int STCTriviaStarter() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Stuyvesant Theater Club Room! And it's Quiz Time!"
@@ -64,15 +64,16 @@ public class STCTrivia extends Activity{
     //Score report
     if(Score >= 3){
       System.out.println("Noice, you passed! Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (3) Most Broadway shows are produced without any set run time. \n 2. (2) Tony Awards \n 3. (3) The Phantom of the Opera, running for a whopping 30 years, 25 in 2013. \n 4. (2) Dark days  \n 5. (4) When actors freeze in a picturesque position");
-        }
+      return true;
+    }
 
     if(Score<3){
       System.out.println("So close, yet so far. Out of 5 questions, you got " + Score + " correct! \n You answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. (3) Most Broadway shows are produced without any set run time. \n 2. (2) Tony Awards \n 3. (3) The Phantom of the Opera, running for a whopping 30 years, 25 in 2013. \n 4. (2) Dark days  \n 5. (4) When actors freeze in a picturesque position");;
-        return 2;
+        return false;
     }
     else {
       System.out.println("Okay, and I'm SURE that you are neither of those." );
-      return 1;
+      return false;
       //add 5 energy used to the player
     }
 
@@ -80,8 +81,13 @@ public class STCTrivia extends Activity{
     //return 0;
   }
   public void PlayActivity(Player x) {
-	
+    boolean result = STCTriviaStarter();
+    if (result){
+      System.out.println(“Yay u won…”);
+      enery+=2;
+    }else{
+      System.print”Awww man  u lost”;
+      energy-=1;
+    }
   }
-
-
 }

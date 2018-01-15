@@ -3,7 +3,8 @@ import cs1.Keyboard;
 
 public class Player{
   public String name;
-public int floor=9;
+  public int floor = 9;
+  public int energy = 10;
   public Player(String _name){
     name=_name;
   }
@@ -41,49 +42,49 @@ public int floor=9;
 
     ArrayList<ArrayList<Activity>> MasterActivity = new	ArrayList<ArrayList<Activity>>();
     ArrayList<Activity>_Floor1=new ArrayList<Activity>();
-    Activity STCTrivia = new STCTrivia();
+    Activity STCTrivia = new STCTriviaStarter();
     _Floor1.add(STCTrivia);
-    Activity BandRoom = new Band();
+    Activity BandRoom = new BandStarter();
     _Floor1.add(BandRoom);
     MasterActivity.add(_Floor1);
     ArrayList<Activity>_Floor2=new ArrayList<Activity>();
-    Activity Guidance = new Guidance();
+    Activity Guidance = new GuidanceStarter();
     _Floor2.add(Guidance);
-    Activity Museum = new HisTrivia();
+    Activity Museum = new HisTriviaStarter();
     _Floor2.add(Museum);
     MasterActivity.add(_Floor2);
     ArrayList<Activity>_Floor3=new ArrayList<Activity>();
-    Activity Bathroom = new Bathroom();
+    Activity Bathroom = new BathroomStarter();
     _Floor3.add(Bathroom);
-    Activity CSRoom = new CSRoom();
+    Activity CSRoom = new CSRoomStarter();
     _Floor3.add(CSRoom);
     MasterActivity.add(_Floor3);
     ArrayList<Activity>_Floor4=new ArrayList<Activity>();
-    Activity MathExhibit = new MathExhibit();
+    Activity MathExhibit = new MathExhibitStarter();
     _Floor4.add(MathExhibit);
     MasterActivity.add(_Floor4);
     ArrayList<Activity>_Floor5=new ArrayList<Activity>();
-    Activity Cafeteria = new Cafe();
+    Activity Cafeteria = new CafeStarter();
     _Floor5.add(Cafeteria);
     MasterActivity.add(_Floor5);
     ArrayList<Activity>_Floor6=new ArrayList<Activity>();
-    Activity Gym = new Gym();
+    Activity Gym = new GymStarter();
     _Floor6.add(Gym);
-    Activity SaD = new SaD();
+    Activity SaD = new SaDStarter();
     _Floor6.add(SaD);
     MasterActivity.add(_Floor6);
     ArrayList<Activity>_Floor7=new ArrayList<Activity>();
-    Activity BioLab = new BioTrivia();
+    Activity BioLab = new BioTriviaStarter();
     _Floor7.add(BioLab);
     MasterActivity.add(_Floor7);
     ArrayList<Activity>_Floor8=new ArrayList<Activity>();
-    Activity PhyLab = new PhyLab();
+    Activity PhyLab = new PhyLabStarter();
     _Floor8.add(PhyLab);
-    Activity Bench = new Bench();
+    Activity Bench = new BenchStarter();
     _Floor8.add(Bench);
     MasterActivity.add(_Floor8);
     ArrayList<Activity>_Floor9=new ArrayList<Activity>();	    
-    Activity twenty48 = new Game2048(); //The latter is the classname//
+    Activity twenty48 = new Game2048Starter(); //The latter is the classname//
     _Floor9.add(twenty48);
     MasterActivity.add(_Floor9);
 
