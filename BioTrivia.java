@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class BioTrivia extends Activity{
    
-  public static boolean BioTriviaStarter() {
+  public static boolean BioTrivia() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Biology Labratory! Since you seem so eager to be here, let's start with a little quiz!"
@@ -81,12 +81,12 @@ public class BioTrivia extends Activity{
     //return 0;
   }
   public void PlayActivity(Player x) {
-    boolean result = BiologyStarter();
+    boolean result = BioTrivia();
     if (result){
-      System.out.println(“Yay u won…”);
+      System.out.println("Yay u won...");
       enery+=2;
     }else{
-      System.print”u lost”;
+      System.out.println("Awww man  u lost");
       energy-=1;
     }
   }

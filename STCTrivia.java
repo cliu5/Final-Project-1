@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class STCTrivia extends Activity{
    
-  public static int STCTriviaStarter() {
+  public static int STCTrivia() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Stuyvesant Theater Club Room! And it's Quiz Time!"
@@ -81,12 +81,12 @@ public class STCTrivia extends Activity{
     //return 0;
   }
   public void PlayActivity(Player x) {
-    boolean result = STCTriviaStarter();
+    boolean result = STCTrivia();
     if (result){
-      System.out.println(“Yay u won…”);
+      System.out.println("Yay u won...");
       enery+=2;
     }else{
-      System.print”Awww man  u lost”;
+      System.out.println("Awww man  u lost");
       energy-=1;
     }
   }

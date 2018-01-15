@@ -1,6 +1,6 @@
 public class CSRoom extends Activity{
   public void PlayActivity(Player x) {
-    boolean result = CSRoomStarter();
+    boolean result = CSRoom();
     if (result){
       System.out.println(“Yay u won…”);
       enery+=2;
@@ -10,7 +10,7 @@ public class CSRoom extends Activity{
     }
   }
 
-  public boolean CSRoomStarter(){
+  public boolean CSRoom(){
     return true;
   }
 }

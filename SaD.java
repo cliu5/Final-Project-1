@@ -1,6 +1,6 @@
 public class SaD extends Activity{
   public void PlayActivity(Player x) {
-    boolean result = SaDStarter();
+    boolean result = SaD();
     if (result){
       System.out.println("Yay u won…");
       energy+=2;
@@ -11,7 +11,7 @@ public class SaD extends Activity{
     }
   }
 
-  public boolean SaDStarter(){
+  public boolean SaD(){
     return true;
   }
 }

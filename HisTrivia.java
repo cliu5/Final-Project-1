@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class HisTrivia extends Activity{
    
-  public static boolean HistoryStarter() {
+  public static boolean HisTrivia() {
     int Score=0;
     int[] AnswerSheet = new int[5];
     System.out.println("Welcome to the Mueseum Room! Since you seem so eager to be here, let's start with a little quiz!"
@@ -78,12 +78,12 @@ public class HisTrivia extends Activity{
   }
   
   public void PlayActivity(Player x) {
-    boolean result = HistoryStarter();
+    boolean result = HisTrivia();
     if (result){
-      System.out.println(“Yay u won…”);
+      System.out.println("Yay u won...");
       enery+=2;
     }else{
-      System.print”Awww man  u lost”;
+      System.out.println("Awww man  u lost");
       energy-=1;
     }
   }
