@@ -126,7 +126,7 @@ public void Play(){
 
 //helper functino to print each statement for each level//
 public String GetFloor() {
-  return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-2);
+  return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-1);
 }
 
 public void playLevel() {
@@ -134,7 +134,7 @@ public void playLevel() {
 	int TOTALonFLOOR;
 	int CURRENToptionINDEX;
 	while (true) {
-    TOTALonFLOOR = MasterFloor.get(floor).size()-2;
+    TOTALonFLOOR = MasterFloor.get(floor).size()-1;
     CURRENToptionINDEX = 0;
     while (CURRENToptionINDEX < TOTALonFLOOR) {
       if (!optionStatus[floor][CURRENToptionINDEX]) {
