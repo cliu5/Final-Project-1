@@ -7,7 +7,7 @@ public class Band extends Activity{
       System.out.println("You leave the room and climb up the stairs to the second floor.");
     } else {
       System.out.println("You walk up to the cowled figure. Just as you are about to speak, the figure turns around \n  and whispers, “I am Dr. Chaos and I vant you to LEAVE.” You have little choice but to oblige. You \n leave the room and proceed to the next floor.");
-      energy -= 1;
+      x.energy -= 1;
   }
   }
   public boolean Band(){
