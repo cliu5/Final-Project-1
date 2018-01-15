@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Player{
   public String name;
-  public int floor = 9;
+  public int floor = 0;
   public int energy = 10;
 	
 	boolean[][] optionStatus = {{false,false},{false,false},{false,false},{false},{false},{false,false},{false},{false,false},{false}};
