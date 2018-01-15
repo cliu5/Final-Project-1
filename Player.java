@@ -125,18 +125,18 @@ public void playLevel() {
     TOTALonFLOOR = MasterFloor.get(floor).get(0);
     CURRENToptionINDEX = 0;
     while (CURRENToptionINDEX < TOTALonFLOOR) {
-      if (!optionStatus[floor][option]) {
-		    System.out.println(option+": "+ MasterFloor.get(floor).get(CURRENToptionINDEX));
+      if (!optionStatus[floor][CURRENToptionINDEX]) {
+		    System.out.println(CURRENToptionINDEX+": "+ MasterFloor.get(floor).get(CURRENToptionINDEX));
       }
-      option++;
+      CURRENToptionINDEX++;
     }
-    int stairs = option;
+    int stairs = CURRENToptionINDEX;
     if (floor < 9) {
-      System.out.println(option+": Take the stairs down one floor");
+      System.out.println(CURRENToptionINDEX+": Take the stairs down one floor");
     }
 	    
     int USEROPTION = Keyboard.readInt();
-    if (USEROPTION < numOptions) {
+    if (USEROPTION < TOTALonFLOOR) {
       MASTERACTIVITY.get(floor).get(USEROPTION).Play(this);
       optionStatus[floor][USEROPTION] = true;
       floor+=1;
