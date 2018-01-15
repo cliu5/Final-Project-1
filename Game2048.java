@@ -1,4 +1,4 @@
-import cs1.Keyboard
+import cs1.Keyboard;
 public class Game2048 extends Activity{
   public void PlayActivity(Player x) {
     boolean result = Game2048();
