@@ -36,11 +36,6 @@ public class Player{
   
 }
 	
-public Player(String _name){
-  this();
-  name=_name;
-}
-	
 	
 public Player(){
 		Activity STCTrivia = new STCTrivia();
@@ -103,7 +98,10 @@ public Player(){
     //Floor9.add("");
 }
 
-
+public Player(String givenname){
+  this();
+  name=givenname;
+}
 public void Play(){
   System.out.println("WELCOME TO OUR GAME!!! YOU ARE IN STUY");
   while(floor<10){
