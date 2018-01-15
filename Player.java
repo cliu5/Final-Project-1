@@ -116,7 +116,7 @@ public Player(String givenname){
 }
 public void Play(){
   System.out.println("WELCOME TO OUR GAME!!!" + name+". YOU ARE IN STUY");
-  while(floor<10){
+  while(floor<9){
     playLevel();
   }
   System.out.println("You're done blablabla add stuff later");
