@@ -115,7 +115,7 @@ public Player(){
     name=givenname;
   }
   public void Play(){
-    System.out.println("Hello " + name + ". You are a Stuyvesant student in an alternate universe starting at the first floor. A mysterious thief has stolen your toy ducky and runs off with it. You hear his helicopter approaching the roof as you rush to catch up to him."
+    System.out.println("Hello " + name + ". You are a Stuyvesant student and a mysterious thief has stolen your toy ducky and runs off with it. You hear his helicopter approaching the roof as you rush to catch up to him."
 );
     while(floor<9){
       playLevel();
