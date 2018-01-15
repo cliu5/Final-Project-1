@@ -50,6 +50,7 @@ public class Keyboard
       String token = getNextToken();
       int value;
          value = Integer.parseInt (token);
+      return value;
    }
 
 
