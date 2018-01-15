@@ -3,10 +3,10 @@ public class Bench extends Activity{
     boolean result = Bench();
     if (result){
       System.out.println("Congratulation on your triumph.");
-      enery+=2;
+      x.energy+=2;
     }else{
       System.out.println("Better brush up on your riddling skills.");
-      energy-=1;
+      x.energy-=1;
     }
   }
 
