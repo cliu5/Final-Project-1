@@ -34,7 +34,7 @@ public class Player{
   ArrayList<Activity>_Floor8=new ArrayList<Activity>();
   ArrayList<Activity>_Floor9=new ArrayList<Activity>();	    
   
-}
+
 	
 	
 public Player(){
