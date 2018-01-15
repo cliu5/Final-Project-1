@@ -1,68 +1,10 @@
 package cs1;
-
-//********************************************************************
-//  Keyboard.java       Author: Lewis and Loftus
-//
-//  Facilitates keyboard input by abstracting details about input
-//  parsing, conversions, and exception handling.
-//********************************************************************
-
 import java.io.*;
 import java.util.*;
 
 public class Keyboard 
 {
-   //*************  Error Handling Section  **************************
 
-   private static boolean printErrors = true;
-   private static int errorCount = 0;
-
-   //-----------------------------------------------------------------
-   //  Returns the current error count.
-   //-----------------------------------------------------------------
-   public static int getErrorCount()
-   {
-      return errorCount;
-   }
-
-   //-----------------------------------------------------------------
-   //  Resets the current error count to zero.
-   //-----------------------------------------------------------------
-   public static void resetErrorCount (int count)
-   {
-      errorCount = 0;
-   }
-
-   //-----------------------------------------------------------------
-   //  Returns a boolean indicating whether input errors are
-   //  currently printed to standard output.
-   //-----------------------------------------------------------------
-   public static boolean getPrintErrors()
-   {
-      return printErrors;
-   }
-
-   //-----------------------------------------------------------------
-   //  Sets a boolean indicating whether input errors are to be
-   //  printed to standard output.
-   //-----------------------------------------------------------------
-   public static void setPrintErrors (boolean flag)
-   {
-      printErrors = flag;
-   }
-
-   //-----------------------------------------------------------------
-   //  Increments the error count and prints the error message if
-   //  appropriate.
-   //-----------------------------------------------------------------
-   private static void error (String str)
-   {
-      errorCount++;
-      if (printErrors) 
-         System.out.println (str);
-   }
-
-   //*************  Tokenized Input Stream Section  ******************
 
    private static String current_token = null;
    private static StringTokenizer reader;
