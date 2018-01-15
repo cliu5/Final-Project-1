@@ -9,8 +9,7 @@ public class Bench extends Activity{
       System.out.println("Better brush up on your riddling skills.");
       x.energy-=1;
     }
-    System.out.println("You leave the bench and proceed to the next floor.")
-      }
+  }
   
   public boolean Bench(){
     int Score=0;

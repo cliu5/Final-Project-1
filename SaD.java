@@ -10,7 +10,7 @@ public class SaD extends Activity{
       System.out.println("Awww man u lost");
       x.energy-=1;
     }
-    System.out.println("You proceed to the next floor.")
+
   }
 
   public boolean SaD(){
