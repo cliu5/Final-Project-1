@@ -1,3 +1,3 @@
 public abstract class Activity {
-    public abstract void PlayActivity(Player x);
+  public abstract void PlayActivity(Player x);
 }
