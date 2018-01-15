@@ -86,8 +86,7 @@ public class Bench extends Activity{
       }
       if(correct) {
         Score+=1;
-        if(FifthAnswer == "2") {
-        Score+=1;
+       
       }
 
     }
