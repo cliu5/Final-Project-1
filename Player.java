@@ -8,15 +8,11 @@ public class Player{
   public int energy = 10;
   public Player(String _name){
     name=_name;
+	  this()
   }
 	
 	
-	
-	
-	
-	
-	
-  public Player(){
+	boolean[][] optionStatus = {{false,false},{false,false},{false,false},{false},{false},{false,false},{false},{false,false},{false}};
     ArrayList<ArrayList<String>> MasterFloor = new ArrayList<ArrayList<String>>();
     ArrayList<String> Floor1 = new ArrayList<String>();
     Floor1.add("You burst through the entrance and find yourself on the 1st Floor of Stuyvesant High \n School. Before you, you see fallen students with papers on the floor. They all seem to be pointing \n in the general direction of the Band Room and Theater.");
@@ -96,6 +92,12 @@ public class Player{
     _Floor9.add(twenty48);
     MasterActivity.add(_Floor9);
 
+	
+	
+	
+	
+  public Player(){
+	
   }
 
 
@@ -109,24 +111,35 @@ public class Player{
     //this is just a temp test to make sure trivias are working//
   }
 
-  public void playLevel(){
-    System.out.println("THIS WILL BE A FUNCTION THAT DISPALYS ALL THE GAMES ON THE FLOOR");
-    while(false){
-      int option=0;
-      while(option<4){
-        if(!OptionStatus[floor][option]){
-          System.out.println(option+": "+map.get(floor).get(option));
-        }
-        option++;
-      }
-      if(floor<9){
-        System.out.println(option+": Take the stairs up");
-      }
-      //FIGURE THIS OUT IT SHOULD BE A WAY TO SEE THE USERS INPUT//
-      int input=Keyboard.readInt();
-      if(input<options){
-        //gahhhhhhhhhhhhhhhh lets do this later//
-      }
+//helper functino to print each statement for each level//
+public String GetFloor() {
+    return MasterFloor.get(floor).get(map.get(floor).size());
+}
+
+    public void playLevel() {
+	System.out.println(GetFloor());
+	int TOTALonFLOOR;
+	int CURRENToptionINDEX;
+	while (true) {
+	    TOTALonFLOOR = MasterFloor.get(floor).get(0);
+	    CURRENToptionINDEX = 0;
+	    while (CURRENToptionINDEX < TOTALonFLOOR) {
+		if (!optionStatus[floor][option]) {
+		    System.out.println(option+": "+ MasterFloor.get(floor).get(CURRENToptionINDEX));
+		}
+		option++;
+	    }
+	    int stairs = option;
+	    if (floor < 9) {
+		System.out.println(option+": Take the stairs down one floor");
+	    }
+	    
+	    int USEROPTION = Keyboard.readInt();
+	    if (USEROPTION < numOptions) {
+		 MASTERACTIVITY.get(floor).get(USEROPTION).Play(this);
+		optionStatus[floor][USEROPTION] = true;
+	        floor+=1;
+	    }
+	}
     }
-  }
 }
