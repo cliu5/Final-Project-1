@@ -91,7 +91,7 @@ public class Player{
     Activity twenty48 = new Game2048(); //The latter is the classname//
     _Floor9.add(twenty48);
     MasterActivity.add(_Floor9);
-
+  }
 	
 	
 	
