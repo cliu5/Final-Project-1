@@ -114,7 +114,7 @@ public void Play(){
 
 //helper functino to print each statement for each level//
 public String GetFloor() {
-  return MasterFloor.get(floor).get(map.get(floor).size());
+  return MasterFloor.get(floor).get(MasterFloor.get(floor).size());
 }
 
 public void playLevel() {
