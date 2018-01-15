@@ -122,7 +122,7 @@ public void Play(){
 
 //helper functino to print each statement for each level//
 public String GetFloor() {
-  return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-1);
+  return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-2);
 }
 
 public void playLevel() {
@@ -140,7 +140,7 @@ public void playLevel() {
     }
     int stairs = CURRENToptionINDEX;
     if (floor < 9) {
-      System.out.println(CURRENToptionINDEX+": Take the stairs down one floor");
+      System.out.println(CURRENToptionINDEX+": Take the stairs up one floor");
     }
 	    
     int USEROPTION = Keyboard.readInt();
