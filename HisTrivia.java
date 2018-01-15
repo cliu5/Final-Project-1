@@ -86,6 +86,7 @@ public class HisTrivia extends Activity{
       System.out.println("Awww man  u lost");
       x.energy-=1;
     }
+    System.out.println("You go onto the next floor.")
   }
 
 

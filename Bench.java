@@ -9,8 +9,9 @@ public class Bench extends Activity{
       System.out.println("Better brush up on your riddling skills.");
       x.energy-=1;
     }
-  }
-
+    System.out.println("You leave the bench and proceed to the next floor.")
+      }
+  
   public boolean Bench(){
     int Score=0;
     String[] AnswerSheet = new String[5];
@@ -45,14 +46,14 @@ public class Bench extends Activity{
           correct = true;
         }
       }
-        if(correct) {
+      if(correct) {
         Score+=1;
       }
       //Third Question//
       System.out.println("To all the students who took drafting, how do you get straight A’s?");
       String ThirdAnswer = Keyboard.readString();
       AnswerSheet[2] = ThirdAnswer;
-       correct = false;
+      correct = false;
       for (int i = 0; i < ThirdAnswer.length() - 5; i ++){
         if (ThirdAnswer.substring(i, i + 5).equals("ruler")){
           correct = true;
@@ -65,7 +66,7 @@ public class Bench extends Activity{
       System.out.println("In Stuyvesant, there exists pieces of technology that allow you to walk through walls. What are they?");
       String FourthAnswer = Keyboard.readString();
       AnswerSheet[3] = FourthAnswer;
-  correct = false;
+      correct = false;
       for (int i = 0; i < FourthAnswer.length() - 4; i ++){
         if (FourthAnswer.substring(i, i + 4).equals("door")){
           correct = true;
@@ -75,7 +76,7 @@ public class Bench extends Activity{
         Score+=1;
       }
       //Fifth Question//
-      System.out.println("A one-story school has yellow walls, pink desks, black computers, green blackboards, \n  beige floors, red lights, blue doors, grey stalls, white windows, teal-colored water fountains, \n and orange sinks. What color are the stairs?");
+      System.out.println("A one-story school has yellow walls, pink desks, black computers, green blackboards, beige floors, red lights, blue doors, grey stalls, white windows, teal-colored water fountains, and orange sinks. What color are the stairs?");
       String FifthAnswer = Keyboard.readString();
       AnswerSheet[4] = FifthAnswer;
       correct = false;
@@ -94,7 +95,7 @@ public class Bench extends Activity{
     if(Score >= 3){
       System.out.println("Noice, you passed! Out of 5 questions, you got " + Score + " correct! \n Your answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. Mount Everest \n 2. ton \n 3. With a ruler \n 4. Doors \n 5. Only one floor exist, therefore no stairs exist.");
       return true;
-        }
+    }
 
     if(Score<3){
       System.out.println("So close, yet so far. Out of 5 questions, you got " + Score + " correct! \n Your answers: 1. " + AnswerSheet[0] + "\n 2. " + AnswerSheet[1] + "\n 3. " + AnswerSheet[2] + "\n 4. " + AnswerSheet[3] + "\n 5. " + AnswerSheet[4] + " \n The correct answers are: \n 1. Mount Everest \n 2. ton \n 3. With a ruler \n 4. Doors \n 5. Only one floor exist, therefore no stairs exist.");
@@ -104,6 +105,6 @@ public class Bench extends Activity{
       System.out.println("Very well.");
       return false;
     }
-    }
   }
+}
 

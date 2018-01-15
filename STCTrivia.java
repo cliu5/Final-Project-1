@@ -89,5 +89,6 @@ public class STCTrivia extends Activity{
       System.out.println("Awww man  u lost");
       x.energy-=1;
     }
+    system.out.println("You go to the next floor.")
   }
 }

@@ -91,8 +91,8 @@ public Player(){
   Floor2.add("Guidance Office");
   Floor2.add("Museum Room");
   Floor2.add("You have now arrived on the second floor. Once again, there is chaos everywhere. The chaos seems to pointing towards the Guidance Room and Museum Room. Where do you proceed?");
-  Floor3.add("CS Room");
   Floor3.add("Bathroom");
+  Floor3.add("CS Room");
   Floor3 .add("Now arriving on the 3rd floor, do you feel the need to empty your bladder before continuing, or go straight to the CS room, where the distubance seems to be? Where are you proceeding to?");
   Floor4.add("MathExhibit");
   Floor4.add("As you climb onto the 4th floor, you spot a sheet of paper taped to the Math Exhibit. You proceed closer for a closer gander.");
@@ -103,65 +103,63 @@ public Player(){
   Floor6.add("Now that you are on the 6th floor, you hear commotions on two opposite sites. One is in the direction of the 6th floor gymnasium and the other is in the direction of the Stuyvesant Speech and Debate Club. Towards which commotion do you proceed towards?");
   Floor7.add("Biology Lab");
   Floor7.add("You arrive on the 7th floor and hear a large commtion in one of the Biology Labs. You approach the laboratory.");
-  Floor8.add("Biology Lab");
+  Floor8.add("Phyics Lab");
   Floor8.add("Bench");
   Floor8.add("You are nearly at the top of Stuyvesant High School. As you wipe your sweat from from your brows, you walk across the 8th Floor. As you walk, you see a bench and hear a large sound that originated from a physics lab. Towards which one do you go?");
   Floor9.add("2048 Lock");
   Floor9.add("You have finally gotten up to the 9th floor. But there still lay one more obstacle in you way. It is a large lock with a touch screen. You must finish the game of 2048 to proceed.");
 }
 
-public Player(String givenname){
-  this();
-  name=givenname;
-}
-public void Play(){
-  System.out.println("WELCOME TO OUR GAME!!!" + name+". YOU ARE IN STUY");
-  while(floor<9){
-    playLevel();
+  public Player(String givenname){
+    this();
+    name=givenname;
   }
-  System.out.println("You're done blablabla add stuff later");
+  public void Play(){
+    System.out.println("WELCOME TO OUR GAME!!!" + name+". YOU ARE IN STUY");
+    while(floor<9){
+      playLevel();
+    }
+    System.out.println("You're done blablabla add stuff later");
 	
-  //this is just a temp test to make sure trivias are working//
-}
+    //this is just a temp test to make sure trivias are working//
+  }
 
-//helper functino to print each statement for each level//
-public String GetFloor() {
-  return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-1);
-}
+  //helper functino to print each statement for each level//
+  public String GetFloor() {
+    return MasterFloor.get(floor).get(MasterFloor.get(floor).size()-1);
+  }
 
-public void playLevel() {
-	System.out.println(GetFloor());
-	int TOTALonFLOOR;
-	int CURRENToptionINDEX;
-	while (true) {
-    TOTALonFLOOR = MasterFloor.get(floor).size()-1;
-    CURRENToptionINDEX = 0;
-    while (CURRENToptionINDEX < TOTALonFLOOR) {
-      if (!optionStatus[floor][CURRENToptionINDEX]) {
-		    System.out.println(CURRENToptionINDEX+": "+ MasterFloor.get(floor).get(CURRENToptionINDEX));
+  public void playLevel() {
+    System.out.println(GetFloor());
+    int TOTALonFLOOR;
+    int CURRENToptionINDEX;
+    while (true) {
+      TOTALonFLOOR = MasterFloor.get(floor).size()-1;
+      CURRENToptionINDEX = 0;
+      while (CURRENToptionINDEX < TOTALonFLOOR) {
+        if (!optionStatus[floor][CURRENToptionINDEX]) {
+          System.out.println(CURRENToptionINDEX+": "+ MasterFloor.get(floor).get(CURRENToptionINDEX));
+        }
+        CURRENToptionINDEX++;
       }
-      CURRENToptionINDEX++;
-    }
-    int stairs = CURRENToptionINDEX;
-    if (floor < 9) {
-      System.out.println(CURRENToptionINDEX+": Take the stairs up one floor");
-    }
+      int stairs = CURRENToptionINDEX;
+      if (floor < 9) {
+        System.out.println(CURRENToptionINDEX+": Take the stairs up one floor");
+      }
 	    
-    int USEROPTION = Keyboard.readInt();
-    if (USEROPTION < TOTALonFLOOR) {
-      MasterActivity.get(floor).get(USEROPTION).PlayActivity(this);
-      optionStatus[floor][USEROPTION] = true;
-      if (floor == 9) {
-		    floor ++;
-		}
+      int USEROPTION = Keyboard.readInt();
+      if (USEROPTION < TOTALonFLOOR) {
+        MasterActivity.get(floor).get(USEROPTION).PlayActivity(this);
+        optionStatus[floor][USEROPTION] = true;
+        if (floor == 9) {
+          floor ++;
+        }
 	    }
 	    else if (USEROPTION == stairs) {
-		floor++;
-		return;
+        floor++;
+        return;
 	    }
-	    
-   
-	}
-}
+    }
+  }
 }
 
