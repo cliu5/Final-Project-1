@@ -8,12 +8,12 @@ public class Player{
   public int energy = 10;
   public Player(String _name){
     name=_name;
-	  this()
-  }
-	
-	
+	  this();
+  
+
 	boolean[][] optionStatus = {{false,false},{false,false},{false,false},{false},{false},{false,false},{false},{false,false},{false}};
-    ArrayList<ArrayList<String>> MasterFloor = new ArrayList<ArrayList<String>>();
+    
+	ArrayList<ArrayList<String>> MasterFloor = new ArrayList<ArrayList<String>>();
     ArrayList<String> Floor1 = new ArrayList<String>();
     Floor1.add("You burst through the entrance and find yourself on the 1st Floor of Stuyvesant High \n School. Before you, you see fallen students with papers on the floor. They all seem to be pointing \n in the general direction of the Band Room and Theater.");
     Floor1.add("Do you proceed to (1) the Band Room OR (2) the Theater?");
