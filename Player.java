@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import cs1.Keyboard;
+import java.util.Arrays;
 
 public class Player{
   public String name;
@@ -8,6 +9,13 @@ public class Player{
   public Player(String _name){
     name=_name;
   }
+	
+	
+	
+	
+	
+	
+	
   public Player(){
     ArrayList<ArrayList<String>> MasterFloor = new ArrayList<ArrayList<String>>();
     ArrayList<String> Floor1 = new ArrayList<String>();
