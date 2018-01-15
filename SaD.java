@@ -3,9 +3,10 @@ public class SaD extends Activity{
     boolean result = SaDStarter();
     if (result){
       System.out.println(“Yay u won…”);
-      enery+=2;
-    }else{
-      System.print”Awww man  u lost”;
+      energy+=2;
+    }
+    else{
+      System.print”Awww man u lost”;
       energy-=1;
     }
   }
