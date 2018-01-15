@@ -130,7 +130,7 @@ public void playLevel() {
 	int TOTALonFLOOR;
 	int CURRENToptionINDEX;
 	while (true) {
-    TOTALonFLOOR = MasterFloor.get(floor).size()-1;
+    TOTALonFLOOR = MasterFloor.get(floor).size()-2;
     CURRENToptionINDEX = 0;
     while (CURRENToptionINDEX < TOTALonFLOOR) {
       if (!optionStatus[floor][CURRENToptionINDEX]) {
