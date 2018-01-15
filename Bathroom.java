@@ -6,7 +6,7 @@ public class Bathroom extends Activity{
       System.out.println("You consider the stench to be too strong and that you can hold it in for a while longer. You decide to proceed to the next floor.");
     }else{
       System.out.println("You brave the stench and enter the restroom. After a few moments, you stumble out, \n gasping for air. Despite being nasally-inhibited, you have relieved yourself. You continue onto the \n next floor.");
-      energy+=1;
+      x.energy+=1;
     }
   }
 
