@@ -12,7 +12,7 @@ public class Bench extends Activity{
   }
 
   public boolean Bench(){
-    return true; int Score=0;
+    int Score=0;
     String[] AnswerSheet = new String[5];
     System.out.println("As you sit down on the bench to rest, you notice a sheet of paper. It seems to have a collection \n  of hard riddles for you to solve. Do you chose to:");
     System.out.println("1. Challenge youself with some hard riddles");
