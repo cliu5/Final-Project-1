@@ -1,3 +1,4 @@
+import cs1.Keyboard
 public class Cafe extends Activity{
   public void PlayActivity(Player x) {
     boolean result = Cafe();
@@ -5,7 +6,7 @@ public class Cafe extends Activity{
       System.out.println("You decide to wait on the lunch line. At first, the lunch lines move at a slow but steady rate. \n  But then, the flow of people caught up with the serving speed of the lunch ladies and slowed down \n to a snail's crawl. Taking into consideration the time needed and the miniscule size of the portions, \n you proceed upstairs.");
     }else{
       System.out.println("You decided to go straight upstairs and chase the thief.");
-      energy+=1;
+      x.energy+=1;
     }
   }
 
