@@ -1,12 +1,13 @@
+import cs1.Keyboard
 public class PhyLab extends Activity{
   public void PlayActivity(Player x) {
     boolean result = PhyLab();
     if (result){
       System.out.println("You climb up the stairs to the next floor.");
-      enery+=2;
+      x.energy+=2;
     }else{
       System.out.println("You keep on watching until, suddenly, another teacher walks by you. Turns out the previous teacher was a sub. The actual teacher is much more Wonderful. You believe that the spectacle is over and proceed to the next floor.");
-      energy-=1;
+      x.energy-=1;
     }
   }
 
