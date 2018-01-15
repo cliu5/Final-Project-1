@@ -39,7 +39,7 @@ public class Bench extends Activity{
       System.out.println("Forward I am heavy, backwards I am not. What am I?");
       String SecondAnswer = Keyboard.readString();
       AnswerSheet[1] = SecondAnswer;
-      boolean correct = false;
+      correct = false;
       for (int i = 0; i < SecondAnswer.length() - 3; i ++){
         if (SecondAnswer.substring(i, i + 3).equals("ton")){
           correct = true;
@@ -52,7 +52,7 @@ public class Bench extends Activity{
       System.out.println("To all the students who took drafting, how do you get straight A’s?");
       String ThirdAnswer = Keyboard.readString();
       AnswerSheet[2] = ThirdAnswer;
-      boolean correct = false;
+       correct = false;
       for (int i = 0; i < ThirdAnswer.length() - 5; i ++){
         if (ThirdAnswer.substring(i, i + 5).equals("ruler")){
           correct = true;
@@ -65,7 +65,7 @@ public class Bench extends Activity{
       System.out.println("In Stuyvesant, there exists pieces of technology that allow you to walk through walls. What are they?");
       String FourthAnswer = Keyboard.readString();
       AnswerSheet[3] = FourthAnswer;
-      boolean correct = false;
+  correct = false;
       for (int i = 0; i < FourthAnswer.length() - 4; i ++){
         if (FourthAnswer.substring(i, i + 4).equals("door")){
           correct = true;
@@ -78,7 +78,7 @@ public class Bench extends Activity{
       System.out.println("A one-story school has yellow walls, pink desks, black computers, green blackboards, \n  beige floors, red lights, blue doors, grey stalls, white windows, teal-colored water fountains, \n and orange sinks. What color are the stairs?");
       String FifthAnswer = Keyboard.readString();
       AnswerSheet[4] = FifthAnswer;
-      boolean correct = false;
+      correct = false;
       for (int i = 0; i < FifthAnswer.length() - 3; i ++){
         if (FifthAnswer.substring(i, i + 3).equals("one")){
           correct = true;
