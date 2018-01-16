@@ -120,7 +120,7 @@ public Player(){
     while(floor<9){
       playLevel();
     }
-    System.out.println("Game over! You're final energy is:" + energy + " . Remember, the higher the better!");
+    System.out.println("Game over! You're final energy is: " + energy + ". Remember, the higher the better!");
 	
     //this is just a temp test to make sure trivias are working//
   }
