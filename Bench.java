@@ -27,7 +27,7 @@ public class Bench extends Activity{
       String FirstAnswer = Keyboard.readString();
       AnswerSheet[0] = FirstAnswer;
       boolean correct = false;
-      for (int i = 0; i < FirstAnswer.length() - 7; i ++){
+      for (int i = 0; i < FirstAnswer.length() - 6; i ++){
         if (FirstAnswer.substring(i, i + 7).equals("everest")){
           correct = true;
         }
@@ -40,7 +40,7 @@ public class Bench extends Activity{
       String SecondAnswer = Keyboard.readString();
       AnswerSheet[1] = SecondAnswer;
       correct = false;
-      for (int i = 0; i < SecondAnswer.length() - 3; i ++){
+      for (int i = 0; i < SecondAnswer.length() - 2; i ++){
         if (SecondAnswer.substring(i, i + 3).equals("ton")){
           correct = true;
         }
@@ -53,7 +53,7 @@ public class Bench extends Activity{
       String ThirdAnswer = Keyboard.readString();
       AnswerSheet[2] = ThirdAnswer;
       correct = false;
-      for (int i = 0; i < ThirdAnswer.length() - 5; i ++){
+      for (int i = 0; i < ThirdAnswer.length() - 4; i ++){
         if (ThirdAnswer.substring(i, i + 5).equals("ruler")){
           correct = true;
         }
@@ -66,7 +66,7 @@ public class Bench extends Activity{
       String FourthAnswer = Keyboard.readString();
       AnswerSheet[3] = FourthAnswer;
       correct = false;
-      for (int i = 0; i < FourthAnswer.length() - 4; i ++){
+      for (int i = 0; i < FourthAnswer.length() - 3; i ++){
         if (FourthAnswer.substring(i, i + 4).equals("door")){
           correct = true;
         }
@@ -79,7 +79,7 @@ public class Bench extends Activity{
       String FifthAnswer = Keyboard.readString();
       AnswerSheet[4] = FifthAnswer;
       correct = false;
-      for (int i = 0; i < FifthAnswer.length() - 3; i ++){
+      for (int i = 0; i < FifthAnswer.length() - 2; i ++){
         if (FifthAnswer.substring(i, i + 3).equals("one")){
           correct = true;
         }
