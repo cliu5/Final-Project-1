@@ -21,6 +21,19 @@ private int[][] Grid;
     }
     return grid;
   }
+  public boolean Finish(){
+    int number = 0;
+    boolean Truth = true;
+    for (int i = 0; i < 3; i++){
+      for (int j = 0; j < 3; j++){
+        if (Grid[i][j] != number){
+          Truth = false;
+        }
+        number += 1;
+      }
+    }
+    return Truth;
+  }
   public void ShiftDown(int x){
     int row = 0;
     int column = 0;
