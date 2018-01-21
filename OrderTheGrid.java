@@ -11,4 +11,14 @@ private int[][] Grid;
       }
     }
   }
+  public String toString(){
+    String grid = "";
+    for (int i = 0; i < 3; i++){
+      for (int j = 0; j < 3; j++){
+        grid += Grid[i][j];
+      }
+      grid += "\n";
+    }
+    return grid;
+  }
 }
