@@ -32,5 +32,13 @@ private int[][] Grid;
         }
       }
     }
+    if (row != 2){
+      int value = Grid[row+1][column];
+      Grid[row+1][column] = Grid[row][column];
+      Grid[row][column] = value;
+    }
+    else {
+      System.out.println("Don't do that again. I see you trying to break this code. DON'T DO THAT AGAIN.");
+    }
   }
 }
