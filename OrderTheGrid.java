@@ -1,8 +1,8 @@
-public class OrderTheGrid{
+public class OrderTheGrid extends Activity{
 private int[][] Grid;
   public OrderTheGrid(){
     Grid = new int[3][3];
-    int[] numbers = {1,2,3,4,5,6,7,8,9};
+    int[] numbers = {6,5,3,7,9,2,1,4,8};
     int index = 0;
     for (int i = 0; i < 3; i++){
       for (int j = 0; j < 3; j++){
@@ -110,6 +110,16 @@ private int[][] Grid;
     }
     else {
       System.out.println("NOT VALID. Try again.");
+    }
+  }
+  public void PlayActivity(Player x) {
+    boolean result = BioTrivia();
+    if (result){
+      System.out.println("Yay u won...");
+      x.energy+=2;
+    }else{
+      System.out.println("Awww man  u lost");
+      x.energy-=1;
     }
   }
 }
