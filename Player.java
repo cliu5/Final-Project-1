@@ -53,8 +53,8 @@ public Player(){
   Activity CSRoom = new CSRoom();
   _Floor3.add(CSRoom);
   MasterActivity.add(_Floor3);
-	Activity MathExhibit = new MathExhibit();
-  _Floor4.add(MathExhibit);
+	Activity OrderTheGrid = new OrderTheGrid();
+  _Floor4.add(OrderTheGrid);
   MasterActivity.add(_Floor4);
 	Activity Cafeteria = new Cafe();
   _Floor5.add(Cafeteria);

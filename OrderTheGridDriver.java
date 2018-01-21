@@ -2,7 +2,7 @@ import cs1.Keyboard;
 
 public class OrderTheGridDriver{
   public static void main(String[] arg){
-    System.out.println("This is the Sliding tile grid problem. The objective of the game is to move the numbered tiles until they share a format as the following example: 1 2 3 \n4 5 6 \n7 8 9 \n The less moves you use the better.")
+    System.out.println("This is the Sliding tile grid problem. The objective of the game is to move the numbered tiles until they share a format as the following example: 1 2 3 \n4 5 6 \n7 8 9 \n The less moves you use the better.");
     OrderTheGrid test = new OrderTheGrid();
     System.out.println(test);
     int counter = 0;
