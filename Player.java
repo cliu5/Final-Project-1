@@ -71,8 +71,8 @@ public Player(){
   Activity Bench = new Bench();
   _Floor8.add(Bench);
   MasterActivity.add(_Floor8);
-	Activity twenty48 = new Game2048(); //The latter is the classname//
-  _Floor9.add(twenty48);
+	Activity Fight = new Fight(); //The latter is the classname//
+  _Floor9.add(Fight);
   MasterActivity.add(_Floor9);
 	MasterFloor.add(Floor1);
 	MasterFloor.add(Floor2);
@@ -103,8 +103,8 @@ public Player(){
   Floor8.add("Phyics Lab");
   Floor8.add("Bench");
   Floor8.add("You are nearly at the top of Stuyvesant High School. As you wipe your sweat from from your brows, you walk across the 8th Floor. As you walk, you see a bench and hear a large sound that originated from a physics lab. Towards which one do you go?");
-  Floor9.add("2048 Lock");
-  Floor9.add("You have finally gotten up to the 9th floor. But there still lay one more obstacle in you way. It is a large lock with a touch screen. You must finish the game of 2048 to proceed.");
+  Floor9.add("Confront the Thief");
+  Floor9.add("You have finally gotten up to the 9th floor. It is time to confront the thief.");
 }
 
   public Player(String givenname){
