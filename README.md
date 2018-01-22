@@ -38,7 +38,7 @@ Coding of Prototype
 Completed:
 
 
-Created and completed Keyboard.java 
+Imported Keyboard.java from external source to avoid needing to use args. 
 
 Created BioTrivia.java，Player.java, and Activity.java 
 
