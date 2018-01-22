@@ -61,8 +61,6 @@ public Player(){
   MasterActivity.add(_Floor5);
 	Activity Gym = new Gym();
   _Floor6.add(Gym);
-  Activity SaD = new SaD();
-  _Floor6.add(SaD);
   MasterActivity.add(_Floor6);
 	Activity BioLab = new BioTrivia();
   _Floor7.add(BioLab);
@@ -99,8 +97,7 @@ public Player(){
   Floor5.add("Cafeteria");
   Floor5.add("Climbing up the stairs between the 4th and 5th floor, you see that the thief had not stopped on the 5th floor and decided to proceed directly to the 6th floor. You are a bit hungry after the long chase. Where do you chose to go?");
   Floor6.add("Gymnasium");
-  Floor6.add("Speech and Debate Club");
-  Floor6.add("Now that you are on the 6th floor, you hear commotions on two opposite sites. One is in the direction of the 6th floor gymnasium and the other is in the direction of the Stuyvesant Speech and Debate Club. Towards which commotion do you proceed towards?");
+  Floor6.add("Now that you are on the 6th floor, you watch the thief run into the gymnasium.");
   Floor7.add("Biology Lab");
   Floor7.add("You arrive on the 7th floor and hear a large commtion in one of the Biology Labs. You approach the laboratory.");
   Floor8.add("Phyics Lab");
